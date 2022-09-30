@@ -86,7 +86,7 @@ table td {
     margin: 0px 0px 0px 25px;
 }
 
-.button-block:onclick > .content {
+.button-block:onclick>.content {
     background-color: #645AFF;
 }
 
@@ -201,8 +201,8 @@ div .button-block {
 .dot {
     width: 32px;
     height: 32px;
-    background: rgb(255,76,59);
-    background: linear-gradient(45deg, rgba(255,76,59,1) 0%, rgba(228,12,91,1) 50%);
+    background: rgb(255, 76, 59);
+    background: linear-gradient(45deg, rgba(255, 76, 59, 1) 0%, rgba(228, 12, 91, 1) 50%);
     border-radius: 50%;
     color: white;
     margin: 0;
@@ -223,4 +223,3 @@ div .button-block {
     justify-content: center;
     align-items: center;
 }
-
