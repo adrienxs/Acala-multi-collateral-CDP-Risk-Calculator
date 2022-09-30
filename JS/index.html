@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><img src="./img/icon.svg" width="32px" height="32px"></li>
+				<li><a href="#">CDP (multi) - Risk Calculator vAlpha | 2022 By 0xAdrien</a></li>
+			</ul>
+		</nav>
+	</header>
+	<br><br><br><br>
+
+	<center>
+		<div class="main-01">
+			<div class="numbers-block">
+				<div class="dot">
+					<h2>1</h2>
+				</div>
+				<hr>
+				<div class="dotb">
+					<h2>2</h2>
+				</div>
+				<hr>
+				<div class="dotb">
+					<h2>3</h2>
+				</div>
+			</div>
+			<br>
+			<h2>Select collateral</h2>
+			<br>
+			Each collateral type has its own unique risk profiles.
+			<br>
+			<div class="content">
+				<input type="radio" id="dot" name="cdp" value="">
+				<label for="dot">DOT</label>
+				<br>
+				<input type="radio" id="lcdot" name="cdp" value="">
+				<label for="lcdot">LCDOT</label>
+				<br>
+				<input type="radio" id="ldot" name="cdp" value="">
+				<label for="aca">LDOT</label>
+				<br>
+				<input type="radio" id="aca" name="cdp" value="">
+				<label for="aca">ACA</label>
+			</div>
+			<div class="button-block">
+				<form action="https://google.com">
+					<button class="button1"><H3>Next</H3></button>
+				</form>
+			</div>
+		</div>
+		<br>
+		<div class="main-02">
+			<div class="numbers-block">
+				<div class="dotb">
+					<h2>1</h2>
+				</div>
+				<hr>
+				<div class="dot">
+					<h2>2</h2>
+				</div>
+				<hr>
+				<div class="dotb">
+					<h2>3</h2>
+				</div>
+			</div>
+			<br>
+			<h2>My Vault</h2>
+			<br>
+			Complete all fields.
+			<br>
+			<div class="content">
+				<div class="input-block">
+					<input type="text" id="deposit" placeholder="Deposited assets (e.g. 100)">
+				</div>
+				<div class="input-block">
+					<input type="text" id="minted_ausd" placeholder="Minted aUSD (e.g. 1500)">
+				</div>
+				<div class="input-block">
+					<input type="text" id="collateral_asset_price" placeholder="Asset price (e.g. 7)">
+				</div>
+				<div class="input-block">
+					<input type="text" id="risk_ratio" placeholder="Risk ratio (e.g. 0.30)">
+				</div>
+			</div>
+			<div class="button-block">
+				<button class=button2>
+					<H3>Prev</H3>
+				</button>
+				<button class=button1 onclick="returnData()">
+					<H3>Next</H3>
+				</button>
+			</div>
+		</div>
+		<br>
+		<div class="main-03">
+			<div class="numbers-block">
+				<div class="dotb">
+					<h2>1</h2>
+				</div>
+				<hr>
+				<div class="dotb">
+					<h2>2</h2>
+				</div>
+				<hr>
+				<div class="dot">
+					<h2>3</h2>
+				</div>
+			</div>
+			<br>
+			<h2>Results</h2>
+			<br>
+			Your CDP results.
+			<br>
+			<div class="content">
+				<table>
+					<tr>
+						<td>Deposited aUSD:</td>
+						<td>
+							<h3 id="ausd_deposit">$-</h3>
+						</td>
+					</tr>
+					<tr>
+						<td>Can mint (MAX):</td>
+						<td>
+							<h3 id="fa_can_mint">$-</h3>
+						</td>
+					</tr>
+					<tr>
+						<td>Can mint (available):</td>
+						<td>
+							<h3 id="ch_can_mint">$-</h3>
+						</td>
+					</tr>
+					<tr>
+						<td>Liq. at (deposit value):</td>
+						<td>
+							<h3 id="liquidation_deposit_value">$-</h3>
+						</td>
+					</tr>
+					<tr>
+						<td>Liq. at (asset price):</td>
+						<td>
+							<h3 id="liquidation_asset_price">$-</h3>
+						</td>
+					</tr>
+					<tr>
+						<td>Payback (to safe):</td>
+						<td>
+							<h3 id="payback">$-</h3>
+						</td>
+					</tr>
+					<tr>
+						<td>DCA (d):</td>
+						<td>
+							<h3 id="DCA_day">$-</h3>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="button-block">
+				<button class=button2>
+					<H3>Prev</H3>
+				</button>
+			</div>
+		</div>
+	</center>
+	<script src="scripts/main.js"></script>
+</body>
+
+</html>
