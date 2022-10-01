@@ -54,7 +54,7 @@
 				<label>LDOT</label>
 			</div>
 			<div class="button-block">
-				<button class="button1">
+				<button class="button1" onclick="checkAsset()">
 					<H3>Next</H3>
 				</button>
 			</div>
@@ -82,15 +82,19 @@
 			<div class="content">
 				<div class="input-block">
 					<input type="text" id="deposit" placeholder="Deposited assets (e.g. 100)">
+					<h3 id="assetName">NaN</h3>
 				</div>
 				<div class="input-block">
-					<input type="text" id="minted_ausd" placeholder="Minted aUSD (e.g. 1500)">
+					<input type="text" id="minted_ausd" class="ausdIcon" placeholder="Minted aUSD (e.g. 1500)">
+					<h3>aUSD</h3>
 				</div>
 				<div class="input-block">
-					<input type="text" id="collateral_asset_price" placeholder="Asset price (e.g. 7)">
+					<input type="text" id="collateral_asset_price" class="ausdIcon" placeholder="Asset price (e.g. 7)">
+					<h3>aUSD</h3>
 				</div>
 				<div class="input-block">
-					<input type="text" id="risk_ratio" placeholder="Risk ratio (e.g. 0.30)">
+					<input type="text" id="risk_ratio" class="ausdIcon" placeholder="Risk ratio (e.g. 0.30)">
+					<h3>aUSD</h3>
 				</div>
 			</div>
 			<div class="button-block">

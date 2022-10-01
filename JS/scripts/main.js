@@ -15,21 +15,30 @@ let ch_can_mint
 let payback
 let DCA_day
 
-function returnData() {
 
+
+
+function checkAsset() {
 	assetValue = document.querySelector('input[id="asset"]:checked').value
 	if (assetValue == 0) {
 		x = 0
+		document.getElementById('assetName').textContent = "DOT"
 	}
 	if (assetValue == 1) {
 		x = 1
+		document.getElementById('assetName').textContent = "LcDOT"
 	}
 	if (assetValue == 2) {
 		x = 2
+		document.getElementById('assetName').textContent = "ACA"
 	}
 	if (assetValue == 3) {
 		x = 3
+		document.getElementById('assetName').textContent = "LDOT"
 	}
+}
+
+function returnData() {
 
 	deposit = document.getElementById("deposit").value;
 	minted_ausd = document.getElementById("minted_ausd").value;
