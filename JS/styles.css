@@ -128,7 +128,7 @@ input[type=text] {
 
 input[type=text].ausdIcon {
     background-color: #F5F5F5;
-    background-image: url(/img/ausd.svg);
+    background-image: url(img/ausd.svg);
     background-size: 32px;
     background-position: 86%;
     background-repeat: no-repeat;
