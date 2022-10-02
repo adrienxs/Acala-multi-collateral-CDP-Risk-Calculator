@@ -42,20 +42,17 @@ function checkAsset() {
 	}
 }
 
-function	prevBlock2()
-{
+function prevBlock2() {
 	block1.style.display = "block";
-	block2.style.display = "none"	
+	block2.style.display = "none"
 }
 
-function	prevBlock3()
-{
+function prevBlock3() {
 	block1.style.display = "block";
-	block3.style.display = "none"	
+	block3.style.display = "none"
 }
 
-function	checkData()
-{
+function checkData() {
 	if (block2.style.display === "none") {
 		block2.style.display = "block";
 	} else {
@@ -65,7 +62,7 @@ function	checkData()
 
 function returnData() {
 	block2.style.display = "none";
-	block3.style.display = "block"	
+	block3.style.display = "block"
 
 	deposit = document.getElementById("deposit").value;
 	minted_ausd = document.getElementById("minted_ausd").value;
