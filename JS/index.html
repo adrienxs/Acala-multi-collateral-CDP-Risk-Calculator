@@ -10,17 +10,7 @@
 </head>
 
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><img src="./img/icon.svg" width="32px" height="32px"></li>
-				<li><a href="#">CDP (multi) - Risk Calculator vAlpha | 2022 By 0xAdrien</a></li>
-			</ul>
-		</nav>
-	</header>
-	<br><br><br><br>
-
-	<center>
+	<div class="center">
 		<div class="main-01">
 			<div class="numbers-block">
 				<div class="dot">
@@ -59,7 +49,6 @@
 				</button>
 			</div>
 		</div>
-		<br>
 		<div class="main-02">
 			<div class="numbers-block">
 				<div class="dotb">
@@ -75,13 +64,13 @@
 				</div>
 			</div>
 			<br>
-			<h2>My Vault</h2>
+			<h2>Vault</h2>
 			<br>
-			Complete all fields.
+			CDP input data.
 			<br>
 			<div class="content">
 				<div class="input-block">
-					<input type="text" id="deposit" placeholder="Deposited assets (e.g. 100)">
+					<input type="text" id="deposit" class="assetIcon" placeholder="Deposited assets (e.g. 100)">
 					<h3 id="assetName">NaN</h3>
 				</div>
 				<div class="input-block">
@@ -98,7 +87,7 @@
 				</div>
 			</div>
 			<div class="button-block">
-				<button class=button2>
+				<button class=button2 onclick="prevBlock2()">
 					<H3>Prev</H3>
 				</button>
 				<button class=button1 onclick="returnData()">
@@ -106,7 +95,6 @@
 				</button>
 			</div>
 		</div>
-		<br>
 		<div class="main-03">
 			<div class="numbers-block">
 				<div class="dotb">
@@ -173,12 +161,13 @@
 				</table>
 			</div>
 			<div class="button-block">
-				<button class=button2>
-					<H3>Prev</H3>
+				<button class=button2 onclick="prevBlock3()">
+					<H3>Restart</H3>
 				</button>
 			</div>
 		</div>
-	</center>
+	</div>
+
 	<script src="scripts/main.js"></script>
 </body>
 

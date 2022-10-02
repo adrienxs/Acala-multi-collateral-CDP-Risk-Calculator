@@ -15,10 +15,14 @@ let ch_can_mint
 let payback
 let DCA_day
 
-
-
+let block1 = document.querySelector('div[class="main-01"]');
+let block2 = document.querySelector('div[class="main-02"]');
+let block3 = document.querySelector('div[class="main-03"]');
 
 function checkAsset() {
+	block1.style.display = "none";
+	block2.style.display = "block"
+
 	assetValue = document.querySelector('input[id="asset"]:checked').value
 	if (assetValue == 0) {
 		x = 0
@@ -38,7 +42,30 @@ function checkAsset() {
 	}
 }
 
+function	prevBlock2()
+{
+	block1.style.display = "block";
+	block2.style.display = "none"	
+}
+
+function	prevBlock3()
+{
+	block1.style.display = "block";
+	block3.style.display = "none"	
+}
+
+function	checkData()
+{
+	if (block2.style.display === "none") {
+		block2.style.display = "block";
+	} else {
+		block2.style.display = "none";
+	}
+}
+
 function returnData() {
+	block2.style.display = "none";
+	block3.style.display = "block"	
 
 	deposit = document.getElementById("deposit").value;
 	minted_ausd = document.getElementById("minted_ausd").value;
