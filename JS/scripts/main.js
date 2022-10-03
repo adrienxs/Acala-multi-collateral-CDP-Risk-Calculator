@@ -1,4 +1,4 @@
-let x,
+let	x,
 	deposit,
 	minted_ausd,
 	collateral_asset_price,
@@ -6,7 +6,7 @@ let x,
 	req_collateral_ratio = [1.60, 2.80, 2.00, 2.85],
 	liquidation_ratio = [1.30, 2.35, 1.65, 2.30];
 
-let assetValue,
+let	assetValue,
 	ausd_deposit,
 	liquidation_deposit_value,
 	liquidation_asset_price,
@@ -15,7 +15,7 @@ let assetValue,
 	payback,
 	DCA_day;
 
-let block1 = document.querySelector('div[class="main-01"]'),
+let	block1 = document.querySelector('div[class="main-01"]'),
 	block2 = document.querySelector('div[class="main-02"]'),
 	block3 = document.querySelector('div[class="main-03"]');
 
