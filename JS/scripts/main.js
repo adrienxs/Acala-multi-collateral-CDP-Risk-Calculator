@@ -72,6 +72,7 @@ function returnData() {
 	fa_can_mint = ausd_deposit / req_collateral_ratio[x];
 	ch_can_mint = fa_can_mint - minted_ausd;
 	payback = minted_ausd - (fa_can_mint * risk_ratio);
+	safe_ratio =(minted_ausd / fa_can_mint) * 100;
 	DCA_day = fa_can_mint / minted_ausd;
 
 	document.getElementById('ausd_deposit').textContent =
@@ -88,6 +89,8 @@ function returnData() {
 		"$" + payback.toFixed(2);
 	document.getElementById('DCA_day').textContent =
 		"$" + DCA_day.toFixed(2);
+	document.getElementById('safe_ratio').textContent =
+		"%" + safe_ratio.toFixed(2);	
 	document.getElementById('assetValue').textContent =
 		assetValue
 }
